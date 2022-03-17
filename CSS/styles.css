@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/** STRUKTUR UND LAYOUT **********************/
+
+
+body {
+    color: black;
+    background-color: #9f9f9f;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+div#wrapper{
+    background-color: #fff;
+    border: 6px solid black;
+    width: 650px;
+    margin: 30px auto;
+    padding: 20px 30px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+
+input#titleInput {
+    margin-left: 59px;
+}
+
+
+input#authorInput {
+    margin-left: 30px;
+}
+
+
+.floatLeft{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.floatRight{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+div#buttons{
+    border-top: 3px solid black;
+    padding-top: 15px;
+}
+
+
+div#listOfBugs{
+    margin-top: 15px;
+}
+
+
+div#listOfBugs div.bugEntry {
+    border-top: 3px solid black;
+    padding: 15px 0;
+}
+
+
+p{
+    padding: 0 0 0 32px;
+    margin: 0;
+}
+
+
+.inline{
+    display: inline;
+    padding: 0;
+}
+
+
+
+
+/** SCHRIFTEN, FARBEN, RAHMEN ****************/
+
+
+h1{
+    font-family: "Trebuchet MS" , sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+label, input, select, p, textarea {
+    font-family: "Trebuchet MS" , sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+input, select, textarea {
+    border: 3px solid black;
+    border-radius: 0;
+    background-color: white;
+    padding: 3px 8px;
+    margin: 0 10px;
+}
+
+
+input[type=button]:hover, select:hover{
+    background-color: black;
+    color: #fff;
+}
+
+
+
+
+/** geschlossene/offene bugs: ****************/
+
+
+.checked {
+    color: darkgreen;
+    text-decoration: line-through;
+}
+
+
+.not_checked{
+    color: red;
+}
